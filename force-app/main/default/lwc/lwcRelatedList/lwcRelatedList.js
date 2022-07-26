@@ -203,6 +203,11 @@ export default class LightningDatatable extends NavigationMixin(
         : false;
   }
 
+get filteredColumns() {
+  return this.columns.filter(col=>this.data.some(row=>row[col.fieldName]));
+}
+
+
   /*********************************************************************
    * All Helper Method's
    *********************************************************************/

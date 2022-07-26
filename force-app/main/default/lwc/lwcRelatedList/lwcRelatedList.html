@@ -1,3 +1,13 @@
+<!--
+  @description       : 
+  @author            : Marc Swan
+  @group             : 
+  @last modified on  : 07-25-2022
+  @last modified by  : Marc Swan 
+  Modifications Log
+  Ver   Date         Author      Modification
+  1.0   07-25-2022   Marc Swan   Initial Version
+-->
 <template>
   <!-- Main content -->
   <lightning-card variant="Narrow" title={titleFormatted} icon-name={iconName}>
@@ -32,7 +42,7 @@
         hide-checkbox-column={showCheckboxes}
         key-field="Id" 
         data={data} 
-        columns={columns} 
+        columns={filteredColumns} 
         onrowaction={handleRowAction}
         onrowselection={handleRowSelection}
         onsave={handleSave}
